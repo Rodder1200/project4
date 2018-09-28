@@ -18,9 +18,10 @@ class ModalDelete extends Component {
 
   render() {
     const { onClose } = this.props;
+    const baseUrl = process.env.PUBLIC_URL;
 
     if (this.state.redirect) {
-      return <Redirect push to="/" />;
+      return <Redirect push to={baseUrl + "/"} />;
     }
     return (
       <div className="modal modal-show">

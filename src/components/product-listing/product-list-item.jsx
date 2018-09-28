@@ -7,7 +7,7 @@ export default function ProductListItem(props) {
     <div className="product card col-md-5 m-3 p-2">
       <img
         className="card-img-top"
-        src={baseUrl + props.product.image}
+        src={props.product.image}
         alt={props.product.title}
       />
       <div className="card-body">
